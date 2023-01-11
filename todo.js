@@ -32,7 +32,7 @@ function newElement() {
     let liElm= document.createElement("li");
     let inputValue = document.getElementById("myInput").value;
     let t = document.createTextNode(inputValue);
-    li.appendChild(t);
+    liElm.appendChild(t);
     if (inputValue === '') {
     alert("You must write something!");
     } else {
@@ -44,7 +44,7 @@ function newElement() {
     let txt = document.createTextNode("\u00D7");
     spanObj.className = "close";
     spanObj.appendChild(txt);
-    li.appendChild(spanObj);
+    liElm.appendChild(spanObj);
 
     for (i = 0; i < closeBtn.length; i++) {
     closeBtn[i].onclick = function() {
